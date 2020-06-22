@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Signup</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="todo">TODO</string>
+    <string name="abc_gmail_com">abc@gmail.com</string>
+    <string name="enter_your_password">Enter Your Password</string>
+    <string name="sign_up_now">Sign Up Now</string>
+    <string name="by_cheking_up_i_agree_to_receice_mail_and_recieve_recomandations">By cheking up I agree to receice mail and recieve recomandations</string>
+    <string name="enter_your_phone_number">*Enter Your phone Number</string>
+    <string name="enter_your_address">Enter Your Address</string>
+    <string name="password_must_be_of_length_b_w_8_to_16">Password must be of length b/w 8 to 16</string>
+    <string name="birthday">Birthday</string>
+    <string name="dd">DD</string>
+    <string name="yy">YY</string>
+    <string name="mm">MM</string>
+
+</resources>
