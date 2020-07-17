@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:fitsSystemWindows="true"
+        android:id="@+id/appbar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|enterAlwaysCollapsed">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:elevation="10dp"
+                    android:id="@+id/topic"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:hint="Topic"
+                    android:textSize="14sp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/white"
+                    android:paddingStart="20dp"/>
+                <EditText
+                    android:layout_below="@+id/topic"
+                    android:elevation="10dp"
+                    android:id="@+id/desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:hint="Put your Descripiton here"
+                    android:textSize="14sp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/white"
+                    android:paddingStart="20dp"/>
+
+            </RelativeLayout>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+<android.support.design.widget.FloatingActionButton
+android:layout_width="60dp"
+android:layout_height="60dp"
+app:fabSize="normal"
+android:src="@drawable/ic_add_white_24dp"
+app:layout_anchor="@id/appbar"
+app:layout_anchorGravity="bottom|end"
+android:layout_marginEnd="20dp" />
+
+<android.support.v4.widget.NestedScrollView
+android:layout_width="match_parent"
+android:layout_height="532dp"
+app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/rc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+</android.support.v7.widget.RecyclerView>
+
+
+</android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
